@@ -54,7 +54,8 @@ pipeline{
             echo 'pipeline failed, check logs'
         }
         always{
-            "Done ✅"
+            echo "Done ✅"
+            cleanWs()
         }
     }
 }
